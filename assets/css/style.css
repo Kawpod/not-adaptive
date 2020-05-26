@@ -1,0 +1,635 @@
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+/* Page */
+.page {
+    overflow: hidden;
+}
+
+
+
+.header.active {
+    background-color: #eb8b8d;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1115px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*Logo*/
+
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    font-size: 14px;
+    text-transform: uppercase;
+    justify-content: flex-end;
+
+}
+
+.logo_name {
+    display: flex;
+    justify-content: flex-start;
+ }
+
+ .logo_name img {
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+ }
+
+
+.header_logo {
+    margin-left: 30px;
+    font-size: 36px;
+    font-family: 'Merriweather', serif;
+    font-weight:  700;
+    color: #005FA3;
+}
+
+
+
+.down_nav {
+    display: flex;
+    margin-left: 150px;
+    
+}
+
+.nav {
+    display: flex;
+    margin-left: 150px;
+} 
+
+.nav-down {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 15px;
+}
+
+.nav-down img {
+    margin-right: 10px;
+    height: 17px;
+}
+
+.nav-item:not(:first-child) {
+    margin-left: 45px;
+}
+
+
+    
+
+
+.intro {
+    background: url(../img/Rectangle.png) center no-repeat;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 125px;
+    height: 670px;
+    position: relative;
+
+}
+
+
+.intro img {
+    height: 670px;
+    margin-top: 120px;
+}
+
+.intro_text p {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Merriweather' serif; 
+}
+
+.btn  {
+    width: 270px;
+    height: 60px;
+    background-color: #005FA3;
+    margin-bottom: 120px;
+   
+}
+
+.btn a {
+    color: #fff; 
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Lato' serif;
+}
+
+
+.btn a:hover {
+    transition: 0.3s linear;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Lato' serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 14px;
+     font-family: 'Lato' serif;
+     font-weight: bold;
+     color: black;
+     text-decoration: none;
+     transition: .3s linear;
+}
+
+
+.button {
+
+    display: inline-block;
+    margin: 20px;
+    width: 10px;
+    height: 10px;
+    background: url(../assets/img/Ellipse.png);
+    background-color: rgb(168, 146, 146);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .3s linear;
+}
+
+.previous {
+    background-color: rgb(206, 197, 197);
+    color: black;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .next {
+    background-color: rgb(206, 197, 197);
+    color: white;
+    width: 60px;
+    height: 60px;
+  }
+
+  .btn_circle a {
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: row;
+    padding: 8px 16px;
+    background-color: rgb(151, 141, 141);
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+    opacity: 0.6;
+    transition: .3s linear;
+  }
+  
+  .btn_circle a:hover {
+    background-color: #ddd;
+    color: #fff;
+    text-decoration: none;
+
+  }
+
+
+
+.button:hover {
+    background-color: #fff;
+    transition: 0.3s linear;
+}
+
+.header_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.speciality {
+    background-color: #EBEBEB;
+    padding-bottom: 120px;
+}
+
+
+.little_text {
+    padding-top: 100px;
+    font-family: 'Lato' serif;
+    font-weight: 900;
+    color: #BDBDBD;
+    font-size: 24px;
+}
+
+.head_text {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    color: #333333;
+}
+
+.prom {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    color: #005FA3;  
+    padding-bottom: 20px;
+}
+    
+
+
+.rectangle_col {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.rectangle_item {
+  position: relative;
+  color: rgb(252, 249, 249);
+  font-family: arial black;
+  margin-top: 30px;
+}
+
+.rectangle_item:hover {
+    background-color: skyblue;
+    opacity: 0.4;
+    transition: .3s linear;
+}
+
+.rectangle_item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.wedo_inner {
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 -15px;
+        padding-bottom: 65px;
+    }
+
+.we_do {
+        width: 38%;
+    }
+
+.square {
+       width: 53%;
+       padding-top: 100px;
+    }
+
+.item_info {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  font-family: 'Lato' serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.big_text {
+    
+    font-family: 'Lato' serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.square_col {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.square_item{
+  position: relative;
+  margin-top: 40px;
+  margin-left: 40px;
+ 
+  
+}
+
+.square_item:hover {
+    opacity: 0.6;
+    transition: .3s linear;
+    
+    
+}
+   
+
+
+.square_info {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+}
+
+.number {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 66px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    padding-bottom: 30px;
+    
+   
+}
+
+.end {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    padding-bottom: 50px;
+    
+    
+}
+
+.case {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #005FA3;
+    margin-bottom: -30px;
+    
+}
+
+.windows {
+    background-color: #EBEBEB;
+    padding-bottom: 100px;
+}
+
+.flag {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+
+.flag img:not(:last-child) {
+    margin-right: 25px;
+}
+
+.button_clients {
+
+    display: inline-block;
+    margin: 20px;
+    width: 10px;
+    height: 10px;
+    background: url(../assets/img/Ellipse.png);
+    background-color: #005FA3;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0.4;
+    transition: .3s linear;
+}
+
+.button_clients:hover {
+    background-color: #005FA3;
+    opacity: 1;
+    transition: 0.3s linear;
+}
+
+   .btn_circle a {
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: row;
+    padding: 8px 16px;
+    background-color: #005FA3;
+    opacity: 0.4;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+    opacity: 0.6;
+    transition: .3s linear;
+    margin-top: -30px;
+  }
+  
+  .btn_circle a:hover {
+    background-color: #005FA3;
+    opacity: 1;
+    color: #fff;
+    text-decoration: none;
+
+  }
+
+  .ivanova {
+      width: 1110px;
+      height: 320px;
+      background-color: #EBEBEB;
+      padding: 45px 95px;
+      margin: 60px 0;
+    }
+
+    .ivanova_text {
+        font-family: 'Lato' serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+    }
+
+    .ivanova_footer {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 40px;
+    }
+
+    .ivanova_footer img {
+        margin-right: 30px;
+    }
+
+    .dir {
+        margin-top: 10px;
+    }
+
+    .Katya {
+       margin-bottom: 5px;
+       font-family: 'Lato' serif;
+       font-style: normal;
+       font-weight: 900;
+       font-size: 18px;
+       line-height: 25px;
+       color: #000000;
+    }
+
+    .director {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #4F4F4F;
+    }
+
+    .side {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer {
+        
+        background: url(../img/Rectangle.png) center no-repeat;;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-top: 125px;
+        height: 670px;
+        position: relative;
+        
+    }
+    .question {
+    font-family: 'Lato' serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding-top: 20px;
+   }
+
+   .footer_call {
+       display: flex;
+       justify-content: flex-start;
+       font-family: 'Lato' serif;
+       font-style: normal;
+       font-weight: 300;
+       font-size: 21px;
+       line-height: 29px;
+       color: #FFFFFF;
+       margin-top: 30px;
+
+   }
+
+   .tel {
+      display: flex;
+      margin-right: 30px;
+    }
+
+    .tel img {
+        margin-right: 20px;
+    }
+
+    .left_side {
+        width: 40%;
+    }
+
+    section {
+        
+        left: 75%;
+        padding: 40px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 60%;
+       
+      }
+      
+     section div {
+        position: relative;
+      }
+      
+     section div input {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        font-family: 'Caveat', sans-serif;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+        padding: 10px 0;
+        outline: none;
+        width: 100%;
+}
+
+section div p {
+     color: #fff;
+}
+
+section input[type="submit"] {
+  background: #2d89ea;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Caveat', sans-serif;
+  font-size: 24px;
+  padding: 6px 28px;
+  outline: none;
+}
+
+.right_side{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.form-control{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.human {
+    display: flex;
+}
+
+.name{
+    margin-right: 20px;
+}
+
+
+  
